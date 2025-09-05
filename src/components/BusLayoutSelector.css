@@ -1,0 +1,73 @@
+/* Bus Layout Selector Styles */
+.bus-layout-selector {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  overflow: hidden;
+}
+
+.layout-tabs {
+  display: flex;
+  background: var(--light-gray);
+  border-bottom: 2px solid var(--main-blue);
+}
+
+.tab-button {
+  flex: 1;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tab-button:hover {
+  background: var(--light-blue);
+  color: var(--main-blue);
+}
+
+.tab-button.active {
+  background: var(--main-blue);
+  color: var(--white);
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--white);
+}
+
+.layout-content {
+  padding: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tab-button {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tab-button {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-button {
+    padding: 6px 8px;
+    font-size: 0.7rem;
+  }
+}

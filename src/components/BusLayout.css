@@ -1,0 +1,328 @@
+/* Bus Layout Styles */
+.bus-layout-container {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.bus-layout-container h3 {
+  color: var(--main-blue);
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.bus-schema {
+  overflow-x: auto;
+  border: 2px solid var(--main-blue);
+  border-radius: var(--border-radius);
+  background: var(--light-gray);
+}
+
+.bus-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  font-weight: 500;
+  min-width: 400px;
+}
+
+.bus-table td {
+  border: 1px solid var(--main-blue);
+  text-align: center;
+  padding: 4px 2px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+/* Empty cells */
+.empty-cell {
+  background: transparent;
+  border: none !important;
+  max-width: 15px;
+  padding: 0px;
+  width: 20px;
+}
+
+/* Level headers */
+.level-header td {
+  background: var(--main-blue);
+  color: var(--white);
+  font-weight: 700;
+  padding: 8px;
+  height: 30px;
+}
+
+.level-title {
+  background: var(--main-blue) !important;
+  color: var(--white) !important;
+}
+
+.level-badge {
+  background-color: #ff9900;
+  color: var(--white);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Driver section */
+.driver-row td {
+  background: var(--warning);
+  color: var(--white);
+  font-weight: 700;
+  padding: 6px;
+}
+
+.driver-cell {
+  background: var(--warning) !important;
+  color: var(--white) !important;
+}
+
+.driver-badge {
+  background-color: #ff9900;
+  color: var(--white);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.driver-seats td {
+  background: var(--warning);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.driver-seat {
+  background: var(--warning) !important;
+  color: var(--white) !important;
+}
+
+/* Guide seats */
+.guide-seats td {
+  background: var(--success);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.guide-seat {
+  background: var(--success) !important;
+  color: var(--white) !important;
+}
+
+/* Regular seats */
+.seat-row td {
+  background: var(--white);
+  color: var(--main-blue);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.seat-cell {
+  background: var(--white) !important;
+  color: var(--main-blue) !important;
+  border: 2px solid var(--main-blue) !important;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.seat-cell:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Seat type colors */
+.seat-cell.standard {
+  background: #e3f2fd !important;
+  color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+
+.seat-cell.standard:hover {
+  background: #1976d2 !important;
+  color: white !important;
+}
+
+.seat-cell.vip {
+  background: #fff3e0 !important;
+  color: #f57c00 !important;
+  border-color: #f57c00 !important;
+}
+
+.seat-cell.vip:hover {
+  background: #f57c00 !important;
+  color: white !important;
+}
+
+.seat-cell.economy {
+  background: #e8f5e8 !important;
+  color: #388e3c !important;
+  border-color: #388e3c !important;
+}
+
+.seat-cell.economy:hover {
+  background: #388e3c !important;
+  color: white !important;
+}
+
+/* Selected seats */
+.seat-cell.selected {
+  background: #e74c3c !important;
+  color: white !important;
+  border-color: #c0392b !important;
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(231, 76, 60, 0.3);
+}
+
+.seat-cell.selected:hover {
+  background: #c0392b !important;
+  color: white !important;
+}
+
+/* Table cells */
+.table-row td {
+  background: var(--secondary);
+  color: var(--white);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.table-cell {
+  background: var(--secondary) !important;
+  color: var(--white) !important;
+}
+
+/* Stairs */
+.stairs-cell {
+  background: var(--warning) !important;
+  color: var(--white) !important;
+  font-weight: 700;
+}
+
+.stairs-badge {
+  background-color: #ff9900;
+  color: var(--white);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+/* WC */
+.wc-cell {
+  background: var(--danger) !important;
+  color: var(--white) !important;
+  font-weight: 700;
+}
+
+.wc-badge {
+  background-color: #dc3545;
+  color: var(--white);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+/* WC and stairs row */
+.wc-stairs-row td,
+.wc-stairs-row-continued td {
+  background: var(--warning);
+  color: var(--white);
+  font-weight: 700;
+}
+
+/* Last row */
+.last-row td {
+  background: var(--white);
+  color: var(--main-blue);
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .bus-layout-container {
+    padding: 15px;
+    margin: 15px 0;
+  }
+  
+  .bus-layout-container h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .bus-table {
+    font-size: 0.7rem;
+    min-width: 350px;
+  }
+  
+  .bus-table td {
+    padding: 2px 1px;
+    height: 16px;
+  }
+  
+  .empty-cell {
+    max-width: 12px;
+    width: 15px;
+  }
+  
+  .level-badge,
+  .driver-badge,
+  .stairs-badge,
+  .wc-badge {
+    font-size: 0.7rem;
+    padding: 1px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bus-layout-container {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .bus-table {
+    font-size: 0.6rem;
+    min-width: 300px;
+  }
+  
+  .bus-table td {
+    padding: 1px;
+    height: 14px;
+  }
+  
+  .empty-cell {
+    max-width: 10px;
+    width: 12px;
+  }
+  
+  .level-header td {
+    padding: 4px;
+    height: 24px;
+  }
+  
+  .driver-row td {
+    padding: 3px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .bus-layout-container {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+  
+  .bus-table {
+    font-size: 0.7rem;
+  }
+  
+  .seat-cell:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
