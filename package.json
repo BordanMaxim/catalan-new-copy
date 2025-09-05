@@ -2,6 +2,7 @@
   "name": "catalan-travel",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bordanmaxim.github.io/catalan-new-copy",
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@stripe/react-stripe-js": "^4.0.0",
@@ -24,11 +25,16 @@
     "web-vitals": "^2.1.4",
     "zod": "^4.1.5"
   },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
