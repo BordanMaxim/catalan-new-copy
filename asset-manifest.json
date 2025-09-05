@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/catalan-new-copy/static/css/main.7b0e7451.css",
+    "main.js": "/catalan-new-copy/static/js/main.3f1043dc.js",
+    "static/js/453.45d7c53b.chunk.js": "/catalan-new-copy/static/js/453.45d7c53b.chunk.js",
+    "index.html": "/catalan-new-copy/index.html",
+    "main.7b0e7451.css.map": "/catalan-new-copy/static/css/main.7b0e7451.css.map",
+    "main.3f1043dc.js.map": "/catalan-new-copy/static/js/main.3f1043dc.js.map",
+    "453.45d7c53b.chunk.js.map": "/catalan-new-copy/static/js/453.45d7c53b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b0e7451.css",
+    "static/js/main.3f1043dc.js"
+  ]
+}
