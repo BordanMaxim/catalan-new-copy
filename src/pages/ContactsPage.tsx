@@ -13,7 +13,7 @@ export const ContactsPage: React.FC = () => {
               <div className="contact-label">Місто:</div>
               <div>Львів</div>
               <div className="contact-label" style={{ marginTop: '8px' }}>Адреса:</div>
-              <div>вул. Кривоноса, 7</div>
+              <div>вул. Кривоноса, 7 </div>
             </div>
             <div>
               <div className="contact-label">Графік роботи:</div>
